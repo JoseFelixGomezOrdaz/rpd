@@ -1,0 +1,5 @@
+'/desaparecidos', 'application.controllers.desaparecidos.index.Index',
+'/desaparecidos/view/(.+)', 'application.controllers.desaparecidos.view.View',
+'/desaparecidos/edit/(.+)', 'application.controllers.desaparecidos.edit.Edit',
+'/desaparecidos/delete/(.+)', 'application.controllers.desaparecidos.delete.Delete',
+'/desaparecidos/insert', 'application.controllers.desaparecidos.insert.Insert',

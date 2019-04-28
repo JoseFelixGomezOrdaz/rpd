@@ -1,0 +1,21 @@
+$def with(desaparecidos)
+<h3>
+    <a href="/desaparecidos">desaparecidos</a>
+</h3>
+<table id="datos_tabla" class="table table-hover" cellspacing="0" width="100%">
+    <thead>
+        <th>desaparecidos</th>
+        <th>Edit</th>
+        <th>Delete</th>
+    </thead>
+    <tbody>
+        $for item in desaparecidos:
+        <tr>
+            <td><a href='/desaparecidos/view/$item.id_desaparecido'>$item.nombre $item.apellido_paterno</a></td>
+            <td><a href='/desaparecidos/edit/$item.id_desaparecido'><span class="glyphicon glyphicon-pencil"></span></a></td>
+            <td><a href='/desaparecidos/delete/$item.id_desaparecido'><span class="glyphicon glyphicon-trash"></span></a></td>
+        </tr>
+    </tbody>
+</table>
+<br>
+<br>

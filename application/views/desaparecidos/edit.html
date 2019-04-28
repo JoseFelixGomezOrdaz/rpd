@@ -1,0 +1,43 @@
+$def with(desaparecidos, message)
+<h3>
+    <a href="/desaparecidos">desaparecidos</a>
+</h3>
+$if message != None:
+    <div class="alert alert-warning">
+        <strong>Advertencia </strong> $message
+    </div>
+    <br>
+<form action="" method="post" enctype="multipart/form-data">
+    <input type="hidden" name="id_desaparecido" id="id_desaparecido" value="$desaparecidos.id_desaparecido" />
+
+    <div class="form-group">
+    <label for="nombre">nombre</label>
+    <input required id="nombre" type="text" class="form-control" name="nombre" size="30" value="$desaparecidos.nombre"/>
+</div><div class="form-group">
+    <label for="apellido_paterno">apellido_paterno</label>
+    <input required id="apellido_paterno" type="text" class="form-control" name="apellido_paterno" size="30" value="$desaparecidos.apellido_paterno"/>
+</div><div class="form-group">
+    <label for="edad">edad</label>
+    <input required id="edad" type="text" class="form-control" name="edad" size="30" value="$desaparecidos.edad"/>
+</div><div class="form-group">
+    <label for="sexo">sexo</label>
+    <input required id="sexo" type="text" class="form-control" name="sexo" size="30" value="$desaparecidos.sexo"/>
+</div><div class="form-group">
+    <label for="fecha_desaparicion">fecha_desaparicion</label>
+    <input required id="fecha_desaparicion" type="text" class="form-control" name="fecha_desaparicion" size="30" value="$desaparecidos.fecha_desaparicion"/>
+</div><div class="form-group">
+    <label for="latitud">latitud</label>
+    <input required id="latitud" type="text" class="form-control" name="latitud" size="30" value="$desaparecidos.latitud"/>
+</div><div class="form-group">
+    <label for="longitud">longitud</label>
+    <input required id="longitud" type="text" class="form-control" name="longitud" size="30" value="$desaparecidos.longitud"/>
+</div>
+
+    <div class="form-group">
+        <label></label>
+        <button id="send" name="send" class="form-control"><span class="glyphicon glyphicon-pencil"></span> Edit</button>
+    </div>
+</form>
+<br>
+<br>
+<br>
